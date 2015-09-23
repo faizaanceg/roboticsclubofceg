@@ -161,7 +161,7 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .intro .intro-body .intro-text {
@@ -305,17 +305,18 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
-    background-color: transparent;
+    border: 1px solid;
+    color: #fff;
+	outline: 0;
+    background-color: #000;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #fff;
 }
 
 ul.banner-social-buttons {
