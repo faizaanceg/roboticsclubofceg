@@ -384,6 +384,19 @@ body {
 	-o-background-size: cover;
 }
 
+.desc {
+
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align:center;
+	width: 100%;
+	height:100%;
+	background-position:center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: center;
+	-o-background-size: cover;
+}
 
 img.img-circle.team-img {
 	width: 200px;
