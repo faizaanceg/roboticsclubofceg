@@ -1,5 +1,3 @@
-function main() {
-
 (function () {
    'use strict';
 
@@ -113,10 +111,22 @@ function main() {
 
     });
 
+    document.getElementById("project_1").onmouseover = function() {
+        document.getElementById("hand").src = "../img/robotic_white.png";
+    }
 
 
+    document.getElementById("project_1").onmouseout = function() {
+        document.getElementById("hand").src = "../img/robotic_icon.png";
+    }
+
+
+    document.getElementById("project_2").onmouseover = function() {
+        document.getElementById("r2").src = "../img/r2d2_white.png";
+    }
+    
+    
+    document.getElementById("project_2").onmouseout = function() {
+        document.getElementById("r2").src = "../img/r2d2.png";
+    }
 }());
-
-
-}
-main();

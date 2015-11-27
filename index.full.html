@@ -35,8 +35,6 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
-    <script src="js/modernizr.custom.js"></script>
-
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -78,7 +76,7 @@
         <div class="overlay">
             <div class="content">
                 <h1><strong><span class="color">Robotics Club of CEG</span></strong></h1>
-                <!--<p class="lead">We are a digital agency with <strong>years of experience</strong> and with <strong>extraordinary people</strong></p>-->
+                <!--<p class="lead">One line description</p>-->
                 <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
             </div>
         </div>
@@ -90,7 +88,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="img/02.png" class="img-responsive">
+                    <img src="img/logo.jpg" class="img-responsive">
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
@@ -100,10 +98,10 @@
                             <div class="clearfix"></div>
                         </div>
                         <p class="intro">
-                            Robotics club of CEG is a student organization established in 2007 by our alumni, aims to 
+                            Robotics club of CEG is a student organization established in 2007 by our alumni which aims to 
                             bridge the gap between academic and practical knowledge, by familiarizing students in the field 
-                            and guiding them on various projects undertaken during their course of study. The Club works towards nurturing the technical minds of the 
-                            college by providing a dias for them to showcase their talents. 
+                            and guiding them on various projects undertaken during their course of study. The club works towards 
+                            nurturing the technical minds of the college by providing a dias for them to showcase their talents. 
                             The skills acquired by the students help them to be industry ready and 
                             improve their prospects of employability.</p>
                     </div>
@@ -220,38 +218,88 @@
                     <hr>
                 </div>
                 <div class="clearfix"></div>
-                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+                <em>Here you can browse some of our projects.</em>
             </div>
             <div class="space"></div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-desktop"></i>
-                    <h4><strong>Web design</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-mobile"></i>
-                    <h4><strong>Mobile Apps</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-camera"></i>
-                    <h4><strong>Photography</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
-
-                <div class="col-md-3 col-sm-6 service">
-                    <i class="fa fa-bullhorn"></i>
-                    <h4><strong>Marketing</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                </div>
+                   <a href="#tf-services" data-target="#handModal" data-toggle="modal" >
+                    <div id="project_1" class="col-md-6 col-sm-6 service">
+                        <img id="hand" class="fa" src="img/robotic_icon.png" alt="..." width="48" height="48" />
+                        <h4><strong>Robotic Hand</strong></h4>
+                    </div>
+                   </a>
+    
+                   <a href="#tf-services" data-target="#bipedModal" data-toggle="modal" >
+                    <div id="project_2" class="col-md-6 col-sm-6 service">
+                        <img id="r2" class="fa" src="img/r2d2.png" alt="..." width="48" height="48" />
+                        <h4><strong>Biped</strong></h4>
+                    </div>
+                    </a>
+                 
             </div>
         </div>
     </div>
-
-    <!-- Clients Section
+    <div class="modal fade" id="handModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><strong>AI Robotic Hand</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="img/project/robotic_hand.jpg" alt="robotic hand" />
+                        </div>
+                        <div class="col-md-6">
+                            <p> AI Robotic Hand is our first ever biggest attempt in the field of Image processing and Artificial Intelligence. Our members
+                                have developed a Robotic hand that can interactively play<em>hand cricket with humans</em>. Image processing is carried out using
+                                OpenCV libraries. The feed of the human hand is taken from a Logitech webcam. The method of convex hull is used to find
+                                the number displayed by human fingers. This is fed to the algo which efficiently calculates and directs the animatronic
+                                finger with a suitable number that is to be displayed. The algorithm is developed both for batting and bowling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <!-- Project Section - Modals  -->
+    <div class="modal fade" id="bipedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><strong>Biped</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="img/project/biped.jpg" alt="robotic hand" />
+                        </div>
+                        <div class="col-md-6">
+                            <p> Biped is one among the significant projects carried out by the members of Robotics club of CEG. It involves design and fabricating
+                                a two legged walking robot with 6 DOF. The robot can be controlled wirelessly from any smart device. It has Six High
+                                torque servos and good quality servo brackets which forms the firm body. The high current driver circuits for servos
+                                are designed by our members using power transistors and regulators. The entire system is powered by using a computer
+                                SMPS. It has the capability to be controlled over any smart device. An android application has been created, which makes
+                                it easy to be controlled from our smart phones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <!-- Tutorial Section
     ==========================================-->
     <div id="tf-clients" class="text-center">
         <div class="overlay">
@@ -517,27 +565,22 @@
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
-                    <li><a href="https://facebook.com/roboticsclubofceg"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://facebook.com/faizaan.ceg"><i class="fa fa-facebook"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Javascripts
+    ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!--<script src="js/jquery.1.11.1.js"></script>-->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth.min.js"></script>
     <script src="js/isotope.min.js"></script>
-
     <script src="js/owl.min.js"></script>
-
-    <!-- Javascripts
-    ================================================== -->
     <script src="js/main.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
   </body>
 </html>

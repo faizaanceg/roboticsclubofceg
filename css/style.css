@@ -294,6 +294,16 @@ img.img-circle.team-img {
 	transition: all 0.5s;
 }
 
+#tf-services img.fa {
+	border: 4px solid #FCAC45;
+	width: 100px;
+	height: 100px;
+	padding: 25px 25px;
+	border-radius: 50%;
+	transition: all 0.5s;
+	
+}
+
 #tf-services i.fa.fa-mobile{
 	font-size: 50px;
 	padding: 20px 25px;
@@ -302,6 +312,12 @@ img.img-circle.team-img {
 #tf-services .service:hover>i.fa{
 	background: #FCAC45;
 	color: #ffffff;
+}
+
+#tf-services .service:hover>img.fa{
+	background: #FCAC45;
+	color: #ffffff;
+	
 }
 
 /* Clients Section */
