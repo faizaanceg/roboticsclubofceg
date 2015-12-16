@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
+---
+layout: wrapper
+---
 <head>
     <!-- Basic Page Needs
     ================================================== -->
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Robotics Club of CEG</title>
     <meta name="description" content="Robotics Club of CEG">
-    <meta name="keywords" content="onepage, mobile responsive, free website, ceg, robotics club">
+    <meta name="keywords" content="onepage, mobile responsive, open source, ceg, robotics club">
     <meta name="author" content="robotics club">
 
     <!-- Favicons
@@ -571,12 +571,14 @@
     <nav id="footer">
         <div class="container">
             <div class="pull-left fnav">
-                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2014. Designed by <a href="https://github.com/faizaanceg">N.Md Faizaan</a>                    based on Spirit8 theme</p>
+                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2015. Designed by <a href="https://github.com/faizaanceg">N.Md Faizaan</a> based on Spirit8 theme</p>
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
                     <li><a href="https://facebook.com/faizaan.ceg"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="/blog"> Blog </a> </li>
+                    {% for post in site.posts limit:1 %}
+                    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
@@ -594,5 +596,3 @@
     <script src="js/modernizr.custom.js"></script>
 
 </body>
-
-</html>
